@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Insurance Cost Calculator 2026 | InsuranceCostGuide</title>
+  <meta name="description" content="Free health insurance cost calculator. Estimate your monthly premium based on your age, state, plan type, and household size. 2026 data.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://insurancecostguide.com/pages/health-insurance-cost-calculator">
+  <meta property="og:title" content="Health Insurance Cost Calculator 2026 | InsuranceCostGuide">
+  <meta property="og:description" content="Free health insurance cost calculator. Estimate your monthly premium based on your profile.">
+  <meta property="og:url" content="https://insurancecostguide.com/pages/health-insurance-cost-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="InsuranceCostGuide">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Health Insurance Cost Calculator 2026 | InsuranceCostGuide">
+  <meta name="twitter:description" content="Free health insurance cost calculator. Estimate your monthly premium based on your age, state, plan type, and household size. 2026 data.">
+  <link rel="stylesheet" href="../styles.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3733223915347669" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index" class="site-logo">Insurance<span>Cost</span>Guide</a>
+    <nav class="nav-desktop">
+      <a href="health-insurance-guide">Health</a>
+      <a href="car-insurance-guide">Car</a>
+      <a href="home-insurance-guide">Home</a>
+      <a href="life-insurance-guide">Life</a>
+      <a href="renters-insurance-guide">Renters</a>
+      <a href="../about">About</a>
+    </nav>
+    <button class="mobile-nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav">
+  <a href="health-insurance-guide">Health</a>
+  <a href="car-insurance-guide">Car</a>
+  <a href="home-insurance-guide">Home</a>
+  <a href="life-insurance-guide">Life</a>
+  <a href="renters-insurance-guide">Renters</a>
+  <a href="../about">About</a>
+  <a href="../contact">Contact</a>
+</nav>
+
+<nav class="breadcrumb" data-schema="true"><ol><li><a href="../index">Home</a></li><li><a href="health-insurance-guide">Health Insurance</a></li><li><span class="current">Cost Calculator</span></li></ol></nav>
+
+<main class="section">
+  <div class="container content-container">
+    <article class="article-content" data-schema="webapp" data-title="Health Insurance Cost Calculator" data-description="Free interactive tool to estimate monthly health insurance premiums based on age, state, plan type, and household size." data-url="https://insurancecostguide.com/pages/health-insurance-cost-calculator">
+
+      <h1>Health Insurance Cost Calculator</h1>
+
+      <div class="article-meta"><span class="author-name">Michael Torres</span><span class="separator">|</span><span>Insurance Research Editor</span><span class="separator">|</span><span>Updated March 29, 2026</span></div>
+
+      <div class="disclaimer-banner"><strong>Important:</strong> This calculator provides estimates for educational purposes only. These are NOT actual insurance quotes. Your actual premium will depend on your specific plan, insurer, location, and individual factors. For actual quotes, visit <a href="https://www.healthcare.gov" rel="nofollow noopener" target="_blank">HealthCare.gov</a> or contact a licensed insurance agent.</div>
+
+      <p>Use this free calculator to estimate your monthly health insurance premium based on your age, location, plan tier, and coverage type. Our estimates are based on national and state-level average data from the ACA marketplace and employer-sponsored plans.</p>
+
+      <!-- Calculator Form -->
+      <div class="calculator-form" id="health-calculator">
+        <div class="calc-field">
+          <label for="health-age">Your Age</label>
+          <input type="number" id="health-age" min="18" max="64" value="35" placeholder="Enter your age">
+        </div>
+        <div class="calc-field">
+          <label for="health-state">Your State</label>
+          <select id="health-state">
+            <option value="avg">National Average</option>
+            <option value="low">Low-Cost State (NH, MN, MI)</option>
+            <option value="medium">Mid-Cost State (IL, TX, GA)</option>
+            <option value="high">High-Cost State (NY, FL, CA)</option>
+            <option value="highest">Highest-Cost State (AK, WV, WY)</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="health-tier">Plan Metal Tier</label>
+          <select id="health-tier">
+            <option value="bronze">Bronze (60/40)</option>
+            <option value="silver" selected>Silver (70/30)</option>
+            <option value="gold">Gold (80/20)</option>
+            <option value="platinum">Platinum (90/10)</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="health-coverage">Coverage Type</label>
+          <select id="health-coverage">
+            <option value="individual" selected>Individual</option>
+            <option value="couple">Couple</option>
+            <option value="family">Family (2 adults + children)</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="health-tobacco">Tobacco User?</label>
+          <select id="health-tobacco">
+            <option value="no" selected>No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="health-calc-btn">Calculate Estimated Premium</button>
+      </div>
+
+      <!-- Results -->
+      <div class="calculator-results" id="health-results" style="display:none;">
+        <h2>Your Estimated Health Insurance Costs</h2>
+        <div class="stat-grid">
+          <div class="stat-card"><span class="stat-value" id="health-monthly">—</span><span class="stat-label">Estimated Monthly Premium</span></div>
+          <div class="stat-card"><span class="stat-value" id="health-annual">—</span><span class="stat-label">Estimated Annual Premium</span></div>
+          <div class="stat-card"><span class="stat-value" id="health-deductible">—</span><span class="stat-label">Estimated Annual Deductible</span></div>
+          <div class="stat-card"><span class="stat-value" id="health-oop">—</span><span class="stat-label">Out-of-Pocket Maximum</span></div>
+        </div>
+        <div class="key-takeaway">
+          <p id="health-summary"></p>
+        </div>
+      </div>
+
+      <!-- Educational Content Below Calculator -->
+      <h2 id="how-it-works">How This Calculator Works</h2>
+      <p>This calculator uses average premium data from the ACA marketplace and adjusts based on several factors:</p>
+      <ul>
+        <li><strong>Age adjustment:</strong> Under ACA rules, insurers can charge older adults up to 3x more than younger adults. Our calculator applies age-based adjustments using the standard ACA age curve.</li>
+        <li><strong>State adjustment:</strong> Premiums vary significantly by state. We group states into cost ranges based on average marketplace premiums.</li>
+        <li><strong>Metal tier:</strong> Higher tiers (Gold, Platinum) have higher premiums but lower out-of-pocket costs. Lower tiers (Bronze) have lower premiums but higher deductibles.</li>
+        <li><strong>Coverage type:</strong> Adding a spouse approximately doubles the premium. Family coverage adds approximately 2.5x to 2.8x the individual premium.</li>
+        <li><strong>Tobacco use:</strong> Insurers can charge tobacco users up to 50% more than non-users in most states.</li>
+      </ul>
+
+      <h2 id="after-estimate">What to Do After Getting Your Estimate</h2>
+      <ol>
+        <li><strong>Check if you qualify for subsidies</strong> — Visit <a href="https://www.healthcare.gov" rel="nofollow noopener" target="_blank">HealthCare.gov</a> to see if you qualify for premium tax credits that can significantly reduce your actual cost.</li>
+        <li><strong>Compare actual plans</strong> — Our estimate gives you a ballpark figure. Actual plans in your area may be higher or lower.</li>
+        <li><strong>Consider total costs</strong> — A plan's premium is just one part of the cost. Factor in the deductible, copays, coinsurance, and out-of-pocket maximum.</li>
+        <li><strong>Check provider networks</strong> — Make sure your preferred doctors and hospitals are in the plan's network before enrolling.</li>
+      </ol>
+
+      <p>For a comprehensive guide to choosing the right health insurance, read our <a href="health-insurance-guide">Health Insurance Complete Guide</a>.</p>
+
+      <div class="author-box"><div class="author-avatar">MT</div><div class="author-info"><h4>Michael Torres</h4><p class="author-role">Insurance Research Editor</p><p>Michael specializes in making complex insurance topics accessible to everyday Americans.</p></div></div>
+
+      <section class="faq-section" data-schema="true">
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="faq-item"><button class="faq-question">Is this calculator accurate?</button><div class="faq-answer"><p>This calculator provides estimates based on national and state-level average data. It is designed to give you a general idea of what health insurance might cost in your situation. Actual premiums from specific insurers may differ based on your exact zip code, the specific plans available in your area, and other individual factors. For exact pricing, apply through HealthCare.gov or your state's marketplace, or contact a licensed insurance agent.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Does the estimate include subsidies?</button><div class="faq-answer"><p>No. This estimate shows the full, unsubsidized premium. Most marketplace enrollees receive premium tax credits that significantly reduce their actual costs. In 2025, 92% of marketplace enrollees received subsidies, with the average subsidized enrollee paying approximately $92 per month. To find out if you qualify for subsidies and how much you could save, visit HealthCare.gov.</p></div></div>
+      </section>
+
+      <section class="related-articles"><h2>Related Articles</h2><div class="grid grid-3">
+      <article class="card"><div class="card-body"><span class="card-label">Guide</span><h3 class="card-title"><a href="health-insurance-guide">Health Insurance Guide</a></h3><p class="card-excerpt">Complete guide to health insurance plans.</p></div></article>
+      <article class="card"><div class="card-body"><span class="card-label">Costs</span><h3 class="card-title"><a href="how-much-does-health-insurance-cost">How Much Does It Cost?</a></h3><p class="card-excerpt">Detailed cost breakdown by state and age.</p></div></article>
+      <article class="card"><div class="card-body"><span class="card-label">Marketplace</span><h3 class="card-title"><a href="health-insurance-marketplace-guide">Marketplace Guide</a></h3><p class="card-excerpt">How to enroll and qualify for subsidies.</p></div></article>
+      </div></section>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index" class="site-logo">Insurance<span>Cost</span>Guide</a><p>Your trusted guide to understanding insurance costs in America.</p></div><div class="footer-col"><h4>Insurance Guides</h4><ul><li><a href="health-insurance-guide">Health Insurance</a></li><li><a href="car-insurance-guide">Car Insurance</a></li><li><a href="home-insurance-guide">Home Insurance</a></li><li><a href="life-insurance-guide">Life Insurance</a></li><li><a href="renters-insurance-guide">Renters Insurance</a></li></ul></div><div class="footer-col"><h4>Tools</h4><ul><li><a href="health-insurance-cost-calculator">Health Insurance Calculator</a></li><li><a href="car-insurance-cost-calculator">Car Insurance Calculator</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="../about">About Us</a></li><li><a href="../contact">Contact</a></li><li><a href="../how-we-research">How We Research</a></li><li><a href="../privacy-policy">Privacy Policy</a></li><li><a href="../terms">Terms of Use</a></li><li><a href="../disclaimer">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 InsuranceCostGuide. All rights reserved.</span><span>For informational purposes only. Not insurance advice. Consult a licensed agent.</span></div></div></footer>
+<script src="../main.js" defer></script>
+</body>
+</html>
