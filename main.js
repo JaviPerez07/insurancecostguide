@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  var DOMAIN = 'https://insurancecostguide.com';
+  var DOMAIN = 'https://insurancecostguides.com';
 
   /* ========== Inject JSON-LD (no duplicates) ========== */
   function injectSchema(obj) {
