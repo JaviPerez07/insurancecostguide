@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Life Insurance Needs Calculator 2026 | InsuranceCostGuide</title>
+<meta content="Free life insurance needs calculator. Estimate how much coverage you and your family need based on income, debt, and future expenses. 2026 data." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://insurancecostguides.com/pages/life-insurance-needs-calculator" rel="canonical"/>
+<meta content="Life Insurance Needs Calculator 2026 | InsuranceCostGuide" property="og:title"/>
+<meta content="Free life insurance needs calculator. Estimate how much coverage you need." property="og:description"/>
+<meta content="https://insurancecostguides.com/pages/life-insurance-needs-calculator" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="InsuranceCostGuide" property="og:site_name"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Life Insurance Needs Calculator 2026" name="twitter:title"/>
+<meta content="Estimate how much coverage you and your family need." name="twitter:description"/>
+<link href="../styles.css" rel="stylesheet"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3733223915347669"></script>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/></head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a class="site-logo" href="../index"><img alt="InsuranceCostGuides Logo" src="/favicon.svg" style="height:40px; margin-right:10px; vertical-align:middle;"/><span style="display:inline-block; vertical-align:middle; font-weight:bold; color:#1e293b;">InsuranceCostGuides</span></a>
+<nav class="nav-desktop">
+<a href="health-insurance-guide">Health</a>
+<a href="car-insurance-guide">Car</a>
+<a href="home-insurance-guide">Home</a>
+<a href="life-insurance-guide">Life</a>
+<a href="renters-insurance-guide">Renters</a>
+<a href="../about">About</a>
+</nav>
+<button aria-label="Toggle menu" class="mobile-nav-toggle"><span></span><span></span><span></span></button>
+</div>
+</header>
+<nav class="mobile-nav">
+<a href="health-insurance-guide">Health</a>
+<a href="car-insurance-guide">Car</a>
+<a href="home-insurance-guide">Home</a>
+<a href="life-insurance-guide">Life</a>
+<a href="renters-insurance-guide">Renters</a>
+<a href="../about">About</a>
+<a href="../contact">Contact</a>
+</nav>
+<nav class="breadcrumb" data-schema="true"><ol><li><a href="../index">Home</a></li><li><a href="life-insurance-guide">Life Insurance</a></li><li><span class="current">Needs Calculator</span></li></ol></nav>
+<main class="section">
+<div class="container content-container">
+<article class="article-content" data-description="Free tool to estimate required life insurance coverage." data-schema="webapp" data-title="Life Insurance Needs Calculator" data-url="https://insurancecostguides.com/pages/life-insurance-needs-calculator">
+<h1>Life Insurance Needs Calculator</h1>
+<div class="article-meta"><span class="author-name">Michael Torres</span><span class="separator">|</span><span>Insurance Research Editor</span><span class="separator">|</span><span>Updated March 29, 2026</span></div>
+<div class="disclaimer-banner"><strong>Important:</strong> This calculator provides estimates for educational purposes only. It is not financial advice.</div>
+<p>Calculate exactly how much life insurance coverage you need to fully protect your loved ones using the DIME formula (Debt, Income, Mortgage, Education).</p>
+<!-- Calculator Form -->
+<div class="calculator-form" id="life-calculator">
+<div class="calc-field">
+<label for="life-debt">Outstanding Debt (excluding mortgage) ($)</label>
+<input id="life-debt" placeholder="e.g. 15000" type="number" value="15000"/>
+</div>
+<div class="calc-field">
+<label for="life-income">Annual Income ($)</label>
+<input id="life-income" placeholder="e.g. 75000" type="number" value="75000"/>
+</div>
+<div class="calc-field">
+<label for="life-years">Years of Income to Replace</label>
+<input id="life-years" placeholder="e.g. 10" type="number" value="10"/>
+</div>
+<div class="calc-field">
+<label for="life-mortgage">Remaining Mortgage Balance ($)</label>
+<input id="life-mortgage" placeholder="e.g. 250000" type="number" value="250000"/>
+</div>
+<div class="calc-field">
+<label for="life-education">Future Education Costs (per child) ($)</label>
+<input id="life-education" placeholder="e.g. 100000" type="number" value="100000"/>
+</div>
+<div class="calc-field">
+<label for="life-kids">Number of Children</label>
+<input id="life-kids" placeholder="e.g. 2" type="number" value="2"/>
+</div>
+<div class="calc-field">
+<label for="life-savings">Existing Savings &amp; Life Insurance ($)</label>
+<input id="life-savings" placeholder="e.g. 50000" type="number" value="50000"/>
+</div>
+<button class="btn btn-primary" id="life-calc-btn">Calculate Needed Coverage</button>
+</div>
+<!-- Results -->
+<div class="calculator-results" id="life-results" style="display:none; margin-top:2rem;">
+<h2>Your Estimated Coverage Need</h2>
+<div class="stat-grid" style="grid-template-columns: 1fr;">
+<div class="stat-card" style="background:#2563EB; color:white;"><span class="stat-value" id="life-total" style="color:white;">—</span><span class="stat-label" style="color:#e2e8f0;">Total Recommended Life Insurance Policy</span></div>
+</div>
+<div class="key-takeaway" style="margin-top:2rem;">
+<p id="life-summary"></p>
+</div>
+</div>
+<script>
+        document.getElementById('life-calc-btn').addEventListener('click', function() {
+          var debt = parseInt(document.getElementById('life-debt').value) || 0;
+          var income = parseInt(document.getElementById('life-income').value) || 0;
+          var years = parseInt(document.getElementById('life-years').value) || 0;
+          var mortgage = parseInt(document.getElementById('life-mortgage').value) || 0;
+          var education = parseInt(document.getElementById('life-education').value) || 0;
+          var kids = parseInt(document.getElementById('life-kids').value) || 0;
+          var savings = parseInt(document.getElementById('life-savings').value) || 0;
+
+          var totalIncome = income * years;
+          var totalEducation = education * kids;
+          var grossNeed = debt + totalIncome + mortgage + totalEducation;
+          var netNeed = grossNeed - savings;
+          if (netNeed < 0) netNeed = 0;
+
+          document.getElementById('life-total').textContent = '$' + netNeed.toLocaleString();
+          document.getElementById('life-summary').innerHTML = '<strong>Summary Breakdown:</strong><br><br>' +
+            '&bull; Income Replacement: $' + totalIncome.toLocaleString() + '<br>' +
+            '&bull; Debt Payoff: $' + debt.toLocaleString() + '<br>' +
+            '&bull; Mortgage Payoff: $' + mortgage.toLocaleString() + '<br>' +
+            '&bull; Education Funding: $' + totalEducation.toLocaleString() + '<br>' +
+            '&bull; Minus Current Savings/Assets: -$' + savings.toLocaleString() + '<br><br>' +
+            'Based on these figures, you should look for a term life insurance policy of approximately <strong>$' + netNeed.toLocaleString() + '</strong>.';
+
+          document.getElementById('life-results').style.display = 'block';
+        });
+      </script>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="site-logo" href="../index">Insurance<span>Cost</span>Guide</a>
+<p>Your trusted guide to understanding insurance costs in America.</p>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 InsuranceCostGuide. All rights reserved.</span>
+</div>
+</div>
+</footer>
+<script defer="" src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Life Insurance Needs Calculator — How Much Do You Need?</title>
+<meta content="Use our free life insurance needs calculator to find out exactly how much coverage your family needs. Uses DIME method plus income replacement formula." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link rel="canonical" href="https://insurancecostguides.com/pages/life-insurance-calculator"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link href="../styles.css" rel="stylesheet"/>
+<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3733223915347669"></script>
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a class="site-logo" href="/"><img alt="InsuranceCostGuides Logo" src="/favicon.svg" style="height:40px;margin-right:10px;vertical-align:middle;"/><span style="display:inline-block;vertical-align:middle;font-weight:bold;color:#1e293b;">InsuranceCostGuides</span></a>
+<nav class="nav-desktop">
+<a href="health-insurance-guide">Health</a>
+<a href="car-insurance-guide">Car</a>
+<a href="home-insurance-guide">Home</a>
+<a href="life-insurance-guide">Life</a>
+<a href="renters-insurance-guide">Renters</a>
+<a href="../about">About</a>
+</nav>
+<button aria-label="Toggle menu" class="mobile-nav-toggle"><span></span><span></span><span></span></button>
+</div>
+</header>
+<nav class="mobile-nav">
+<a href="health-insurance-guide">Health</a>
+<a href="car-insurance-guide">Car</a>
+<a href="home-insurance-guide">Home</a>
+<a href="life-insurance-guide">Life</a>
+<a href="renters-insurance-guide">Renters</a>
+<a href="../about">About</a>
+<a href="../contact">Contact</a>
+</nav>
+<nav class="breadcrumb" data-schema="true"><ol><li><a href="/">Home</a></li><li><a href="life-insurance-guide">Life Insurance</a></li><li><span class="current">Needs Calculator</span></li></ol></nav>
+<main class="section">
+<div class="container content-container">
+<article class="article-content" data-schema="webapp" data-title="Life Insurance Needs Calculator" data-description="Calculate how much life insurance coverage your family needs using income replacement and DIME method." data-url="https://insurancecostguides.com/pages/life-insurance-calculator">
+<h1>Life Insurance Needs Calculator</h1>
+<div class="article-meta"><span class="author-name">Michael Torres</span><span class="separator">|</span><span>Insurance Research Editor</span><span class="separator">|</span><span>Updated April 2026</span></div>
+<div class="disclaimer-banner"><strong>Educational Tool:</strong> This calculator provides estimates for educational purposes only. It is not financial or insurance advice. Consult a licensed agent for personalized recommendations.</div>
+
+<p>How much life insurance do you actually need? Too little leaves your family financially exposed; too much means you're overpaying for coverage. This calculator uses two proven methods — <strong>Income Replacement</strong> and the <strong>DIME Method</strong> (Debt, Income, Mortgage, Education) — to give you a clear picture of how much coverage makes sense for your situation.</p>
+
+<div class="calculator-form" id="life-calc-form" style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:2rem;margin:2rem 0;">
+  <h2 style="margin-top:0;font-size:1.3rem;">Your Financial Information</h2>
+  <div class="calc-field">
+    <label for="lc-income">Annual Income ($)</label>
+    <input id="lc-income" type="number" value="75000" placeholder="e.g. 75000" min="0"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-years">Years Dependents Need Support</label>
+    <input id="lc-years" type="number" value="15" placeholder="e.g. 15" min="0" max="50"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-debts">Outstanding Debts — Excluding Mortgage ($) <span style="font-size:0.85rem;color:#6B7280;">(credit cards, car loans, student loans, etc.)</span></label>
+    <input id="lc-debts" type="number" value="25000" placeholder="e.g. 25000" min="0"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-mortgage">Remaining Mortgage Balance ($)</label>
+    <input id="lc-mortgage" type="number" value="280000" placeholder="e.g. 280000" min="0"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-education">Education Costs per Child ($) <span style="font-size:0.85rem;color:#6B7280;">(4-yr college avg ~$120,000)</span></label>
+    <input id="lc-education" type="number" value="120000" placeholder="e.g. 120000" min="0"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-children">Number of Children</label>
+    <input id="lc-children" type="number" value="2" placeholder="e.g. 2" min="0" max="20"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-savings">Current Savings &amp; Investments ($) <span style="font-size:0.85rem;color:#6B7280;">(reduces coverage needed)</span></label>
+    <input id="lc-savings" type="number" value="50000" placeholder="e.g. 50000" min="0"/>
+  </div>
+  <div class="calc-field">
+    <label for="lc-final">Final Expenses Estimate ($) <span style="font-size:0.85rem;color:#6B7280;">(funeral, medical, etc. — default $15,000)</span></label>
+    <input id="lc-final" type="number" value="15000" placeholder="e.g. 15000" min="0"/>
+  </div>
+  <button class="btn btn-primary" id="lc-btn" style="margin-top:1rem;">Calculate My Coverage Need</button>
+</div>
+
+<div id="lc-results" style="display:none;margin:2rem 0;">
+  <div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:12px;padding:2rem;margin-bottom:1.5rem;">
+    <h2 style="margin-top:0;color:#1E40AF;">Recommended Coverage Amount</h2>
+    <div style="font-size:3rem;font-weight:800;color:#2563EB;margin:1rem 0;" id="lc-total">—</div>
+    <p id="lc-main-note" style="color:#374151;"></p>
+  </div>
+
+  <div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;">
+    <h3 style="margin-top:0;">DIME Method Breakdown</h3>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr style="border-bottom:1px solid #E2E8F0;">
+        <td style="padding:0.75rem 0;font-weight:600;">D — Debt (non-mortgage)</td>
+        <td style="padding:0.75rem 0;text-align:right;" id="lc-dime-debt">—</td>
+      </tr>
+      <tr style="border-bottom:1px solid #E2E8F0;">
+        <td style="padding:0.75rem 0;font-weight:600;">I — Income Replacement</td>
+        <td style="padding:0.75rem 0;text-align:right;" id="lc-dime-income">—</td>
+      </tr>
+      <tr style="border-bottom:1px solid #E2E8F0;">
+        <td style="padding:0.75rem 0;font-weight:600;">M — Mortgage</td>
+        <td style="padding:0.75rem 0;text-align:right;" id="lc-dime-mortgage">—</td>
+      </tr>
+      <tr style="border-bottom:1px solid #E2E8F0;">
+        <td style="padding:0.75rem 0;font-weight:600;">E — Education</td>
+        <td style="padding:0.75rem 0;text-align:right;" id="lc-dime-education">—</td>
+      </tr>
+      <tr style="border-bottom:1px solid #E2E8F0;">
+        <td style="padding:0.75rem 0;font-weight:600;">Final Expenses</td>
+        <td style="padding:0.75rem 0;text-align:right;" id="lc-dime-final">—</td>
+      </tr>
+      <tr style="border-bottom:1px solid #E2E8F0;">
+        <td style="padding:0.75rem 0;color:#DC2626;">Less: Current Savings</td>
+        <td style="padding:0.75rem 0;text-align:right;color:#DC2626;" id="lc-dime-savings">—</td>
+      </tr>
+      <tr>
+        <td style="padding:0.75rem 0;font-weight:700;font-size:1.1rem;">Total Recommended Coverage</td>
+        <td style="padding:0.75rem 0;text-align:right;font-weight:700;font-size:1.1rem;color:#2563EB;" id="lc-dime-total">—</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:12px;padding:1.5rem;">
+    <h3 style="margin-top:0;color:#065F46;">What This Means for Your Policy</h3>
+    <p id="lc-policy-guidance" style="color:#374151;margin:0;"></p>
+  </div>
+  <p style="font-size:0.85rem;color:#6B7280;margin-top:1rem;"><em>This is an educational estimate. Consult a licensed insurance agent for advice tailored to your specific financial situation, health status, and goals.</em></p>
+</div>
+
+<h2>Understanding Life Insurance Needs</h2>
+<p>Most financial planners recommend a life insurance policy that replaces 10-12 times your annual income. However, this simple rule of thumb can be misleading — it doesn't account for your actual debts, existing savings, or the number and age of your dependents. That's why structured methods like DIME give a more accurate picture.</p>
+
+<h3>The DIME Method Explained</h3>
+<p>DIME stands for Debt, Income, Mortgage, and Education. It ensures every major financial obligation your survivors would face is accounted for:</p>
+<ul style="list-style:disc;padding-left:1.5rem;margin:1rem 0;">
+<li><strong>Debt</strong> — All outstanding non-mortgage debts that would need to be paid off, including credit cards, auto loans, student loans, and personal loans.</li>
+<li><strong>Income</strong> — The total income your dependents would need over the years they rely on your earnings. For a breadwinner with young children, this might mean 15-20 years of income replacement.</li>
+<li><strong>Mortgage</strong> — The remaining balance on your home loan, so your family doesn't have to worry about losing their home.</li>
+<li><strong>Education</strong> — The estimated cost to fund your children's college education. Four-year college costs currently average $30,000-$60,000 per year at state schools and $55,000-$80,000 per year at private institutions.</li>
+</ul>
+
+<h2>How Much Life Insurance Costs in 2025</h2>
+<div class="table-wrapper">
+<table class="data-table">
+<thead><tr><th>Coverage Amount</th><th>30-yr Male</th><th>30-yr Female</th><th>40-yr Male</th><th>40-yr Female</th><th>50-yr Male</th><th>50-yr Female</th></tr></thead>
+<tbody>
+<tr><td>$250,000 (20-yr term)</td><td>$13/mo</td><td>$11/mo</td><td>$22/mo</td><td>$18/mo</td><td>$53/mo</td><td>$40/mo</td></tr>
+<tr><td>$500,000 (20-yr term)</td><td>$22/mo</td><td>$18/mo</td><td>$39/mo</td><td>$31/mo</td><td>$96/mo</td><td>$72/mo</td></tr>
+<tr><td>$1,000,000 (20-yr term)</td><td>$40/mo</td><td>$32/mo</td><td>$72/mo</td><td>$56/mo</td><td>$183/mo</td><td>$135/mo</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:#64748B;margin-top:0.5rem;">Rates shown are approximate monthly premiums for healthy non-smokers. Actual rates will vary by health classification, insurer, and state.</p>
+
+<div class="key-takeaways" style="background:#EFF6FF;border-left:4px solid #2563EB;padding:1.5rem;margin:2rem 0;border-radius:0 8px 8px 0;">
+<h3 style="margin-top:0;">Key Takeaways</h3>
+<ul style="list-style:disc;padding-left:1.5rem;">
+<li>The DIME method provides a more accurate coverage estimate than the simple "10x income" rule.</li>
+<li>Term life insurance is the most affordable option for most families with dependents.</li>
+<li>A healthy 35-year-old can get $500,000 of 20-year term coverage for about $22-$30/month.</li>
+<li>Women pay 10-20% less than men for the same life insurance due to longer life expectancy.</li>
+<li>Buy life insurance when you're young and healthy — premiums increase significantly with age.</li>
+</ul>
+</div>
+
+<div class="author-box" style="background:#F8FAFC;border:1px solid #E2E8F0;padding:1.5rem;margin:2rem 0;border-radius:8px;">
+<div><strong>Michael Torres</strong> — Insurance Research Editor<br>
+<span style="color:#64748B;font-size:0.9rem;">Michael analyzes U.S. insurance markets to help consumers understand coverage costs, policy structures, and money-saving strategies across all major insurance categories.</span></div>
+</div>
+<p style="font-size:0.85rem;color:#64748B;border-top:1px solid #E2E8F0;padding-top:1rem;margin-top:2rem;"><em>This content is for informational purposes only and does not constitute financial or insurance advice. Always consult a licensed insurance professional for advice specific to your situation.</em></p>
+</article>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="site-logo" href="/">Insurance<span>Cost</span>Guide</a>
+<p>Your trusted guide to understanding insurance costs in America.</p>
+</div>
+<div class="footer-col">
+<h4>Insurance Guides</h4>
+<ul>
+<li><a href="health-insurance-guide">Health Insurance</a></li>
+<li><a href="car-insurance-guide">Car Insurance</a></li>
+<li><a href="home-insurance-guide">Home Insurance</a></li>
+<li><a href="life-insurance-guide">Life Insurance</a></li>
+<li><a href="renters-insurance-guide">Renters Insurance</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Tools</h4>
+<ul>
+<li><a href="insurance-premium-estimator">Premium Estimator</a></li>
+<li><a href="deductible-calculator">Deductible Calculator</a></li>
+<li><a href="life-insurance-calculator">Life Insurance Calculator</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<ul>
+<li><a href="../about">About Us</a></li>
+<li><a href="../contact">Contact</a></li>
+<li><a href="../privacy-policy">Privacy Policy</a></li>
+<li><a href="../terms">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 InsuranceCostGuide. All rights reserved.</span>
+<span>For informational purposes only. Not insurance advice.</span>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  document.getElementById('lc-btn').addEventListener('click', function() {
+    var income = parseFloat(document.getElementById('lc-income').value) || 0;
+    var years = parseFloat(document.getElementById('lc-years').value) || 0;
+    var debts = parseFloat(document.getElementById('lc-debts').value) || 0;
+    var mortgage = parseFloat(document.getElementById('lc-mortgage').value) || 0;
+    var education = parseFloat(document.getElementById('lc-education').value) || 0;
+    var children = parseInt(document.getElementById('lc-children').value) || 0;
+    var savings = parseFloat(document.getElementById('lc-savings').value) || 0;
+    var finalExp = parseFloat(document.getElementById('lc-final').value) || 15000;
+
+    var incomeReplacement = income * years;
+    var totalEducation = education * children;
+    var gross = debts + incomeReplacement + mortgage + totalEducation + finalExp;
+    var net = Math.max(0, gross - savings);
+
+    function fmt(n) { return '$' + Math.round(n).toLocaleString(); }
+
+    document.getElementById('lc-total').textContent = fmt(net);
+    document.getElementById('lc-dime-debt').textContent = fmt(debts);
+    document.getElementById('lc-dime-income').textContent = fmt(incomeReplacement);
+    document.getElementById('lc-dime-mortgage').textContent = fmt(mortgage);
+    document.getElementById('lc-dime-education').textContent = fmt(totalEducation);
+    document.getElementById('lc-dime-final').textContent = fmt(finalExp);
+    document.getElementById('lc-dime-savings').textContent = '-' + fmt(savings);
+    document.getElementById('lc-dime-total').textContent = fmt(net);
+
+    document.getElementById('lc-main-note').innerHTML =
+      'Based on your inputs, your family would need approximately <strong>' + fmt(net) + '</strong> to cover ' +
+      years + ' years of income replacement, outstanding debts, and future obligations. ' +
+      'This is the coverage amount you should aim for in a term life policy.';
+
+    // Policy guidance
+    var roundedNet = Math.ceil(net / 250000) * 250000;
+    var termOpts = '';
+    if (years <= 10) termOpts = '10-year term policy';
+    else if (years <= 20) termOpts = '20-year term policy';
+    else termOpts = '30-year term policy';
+
+    document.getElementById('lc-policy-guidance').innerHTML =
+      'Consider a <strong>' + fmt(roundedNet) + ' ' + termOpts + '</strong>. ' +
+      'For a healthy non-smoker, this level of coverage typically costs between <strong>$' +
+      Math.round(roundedNet / 1000000 * 40) + ' and $' + Math.round(roundedNet / 1000000 * 70) + '/month</strong> at age 30-35, ' +
+      'and <strong>$' + Math.round(roundedNet / 1000000 * 72) + ' to $' + Math.round(roundedNet / 1000000 * 120) + '/month</strong> at age 40-45. ' +
+      'Get quotes from at least 3-5 term life insurers — rates can vary by 30-50% for the same coverage.';
+
+    document.getElementById('lc-results').style.display = 'block';
+    document.getElementById('lc-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+<script defer src="../main.js"></script>
+</body>
+</html>

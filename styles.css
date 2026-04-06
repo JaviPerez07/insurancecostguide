@@ -369,10 +369,13 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   display: flex;
   flex-direction: column;
 }
-.card:hover {
+.card:hover, .guide-card:hover, .article-card:hover, .calculator-card:hover {
   border-color: var(--color-primary-lighter);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
   transform: translateY(-2px);
+}
+.guide-card, .article-card, .calculator-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-body {
   padding: var(--space-xl);

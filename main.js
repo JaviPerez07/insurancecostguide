@@ -364,4 +364,19 @@
     });
   });
 
+  /* ========== Clickable Cards ========== */
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.card, .guide-card, .article-card, .calculator-card').forEach(function (card) {
+      var link = card.querySelector('a');
+      if (link) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function (e) {
+          if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+            window.location.href = link.href;
+          }
+        });
+      }
+    });
+  });
+
 })();

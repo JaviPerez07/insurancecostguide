@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /404.html
 
-Sitemap: https://insurancecostguide.com/sitemap.xml
+Sitemap: https://insurancecostguides.com/sitemap.xml
