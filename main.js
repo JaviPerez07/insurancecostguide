@@ -125,7 +125,7 @@
     var banner = document.createElement('div');
     banner.className = 'cookie-consent';
     banner.innerHTML =
-      '<p>We use cookies for analytics and to improve your experience. Read our <a href="' + DOMAIN + '/privacy-policy.html">Privacy Policy</a>.</p>' +
+      '<p>We use cookies for analytics and to improve your experience. Read our <a href="' + DOMAIN + '/privacy-policy">Privacy Policy</a>.</p>' +
       '<div class="cookie-buttons">' +
       '<button class="cookie-btn cookie-btn-reject" id="cookie-reject">Reject Non-Essential</button>' +
       '<button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept</button>' +
