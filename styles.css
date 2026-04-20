@@ -1222,3 +1222,26 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-weight: 500;
   line-height: 1.6;
 }
+
+
+/* Boat insurance calculator controls */
+.calculator-card label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  font-weight: 600;
+  color: var(--color-heading);
+  margin-bottom: var(--space-md);
+}
+.calculator-card input,
+.calculator-card select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+.calculator-card .hero-cta {
+  margin: var(--space-md) 0;
+  display: inline-block;
+}
