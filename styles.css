@@ -1188,3 +1188,37 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .article-content { max-width: 100%; }
   a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
 }
+
+
+/* E-E-A-T author and editorial visibility */
+.author-info strong {
+  display: block;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 4px;
+}
+.author-info span {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+.editorial-note {
+  background: #f0fff4;
+  border: 1px solid #c6f6d5;
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  margin-bottom: var(--space-xl);
+  line-height: 1.6;
+}
+.hero-trust-line {
+  margin: var(--space-xl) auto 0;
+  max-width: 760px;
+  color: rgba(255,255,255,0.86);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.6;
+}
