@@ -213,7 +213,6 @@
       'url': el.getAttribute('data-url') || window.location.href,
       'datePublished': el.getAttribute('data-published') || '',
       'dateModified': el.getAttribute('data-modified') || el.getAttribute('data-published') || '',
-      'author': { '@type': 'Person', 'name': 'Michael Torres' },
       'publisher': { '@type': 'Organization', 'name': 'InsuranceCostGuide', 'url': DOMAIN }
     });
   });
