@@ -630,50 +630,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .data-table tbody tr:last-child td { border-bottom: none; }
 .data-table tbody tr:hover { background: #ebf8ff; }
 
-/* Author box */
-.author-box {
-  display: flex;
-  gap: var(--space-lg);
-  padding: var(--space-xl);
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  margin: var(--space-2xl) 0;
-}
-.author-avatar {
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  color: #fff;
-  font-weight: 700;
-  font-size: var(--font-size-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.author-info h4 {
-  font-weight: 700;
-  color: var(--color-heading);
-  margin-bottom: 2px;
-}
-.author-role {
-  font-size: var(--font-size-sm);
-  color: var(--color-primary-light);
-  font-weight: 500;
-  margin-bottom: var(--space-sm);
-}
-.author-info p {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  margin-bottom: var(--space-xs);
-}
-.author-disclaimer {
-  font-size: var(--font-size-xs) !important;
-  color: var(--color-text-light) !important;
-}
 
 /* ============================================================
    FAQ ACCORDION
@@ -1190,19 +1146,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 
-/* E-E-A-T author and editorial visibility */
-.author-info strong {
-  display: block;
-  font-weight: 700;
-  color: var(--color-heading);
-  margin-bottom: 4px;
-}
-.author-info span {
-  display: block;
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
+/* E-E-A-T editorial visibility */
 .editorial-note {
   background: #f0fff4;
   border: 1px solid #c6f6d5;
